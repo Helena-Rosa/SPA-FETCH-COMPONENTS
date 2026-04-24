@@ -1,13 +1,26 @@
 /* teste com os exemplos de w3 school*/
+let result = "Not Active.";
+let isActive = false;
+console.log(result, isActive)
+
+if (isActive === true) {
+     result = "Active!";
+}else{
+    result = "Not Active"
+}
+
+console.log(result, isActive)
 
 try{
+    
+
 
 }catch (erro){
     
     let text = `
     <strong>Nome do erro:</strong> ${erro.name} <br />
     <strong>Mensagem:</strong> ${erro.message} <br />
-    <strong>Stack:</strong> <pre>${erro.stack} <br />
+    <strong>Stack:</strong> <span>${erro.stack} <br />
     `;
 
     document.body.innerHTML = text 
@@ -30,4 +43,5 @@ try{
 /* criar uma promessa e consumir usando then e .catch*/
 
 /* cosumir usando async/awaint e try.catch*/
+
 
