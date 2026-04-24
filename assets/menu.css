@@ -67,3 +67,33 @@
     
   }
 }
+
+.menu__hamburguer {
+  
+  border-top: 2px solid;
+  width: 20px;
+}
+  .menu__hamburguer::before,
+  .menu__hamburguer::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  .menu.active .menu__hamburguer {
+    border-top-color: transparent;
+  }
+
+  .menu.active .menu__hamburguer::before {
+    transform: rotate(135deg);
+  }
+
+  .menu.active .menu__hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
