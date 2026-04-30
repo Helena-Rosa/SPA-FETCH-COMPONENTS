@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de CEP</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f4fbfb; /* Tom suave de fundo semelhante ao da imagem */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #1a202c;
+            font-weight: 700;
+        }
+
+        .input-group {
+            margin-bottom: 8px;
+        }
+
+        input[type="text"] {
+            width: 220px;
+            padding: 10px;
+            font-size: 1rem;
+            text-align: center;
+            border: 1px solid #a0aec0;
+            border-radius: 4px;
+            outline: none;
+            color: #2d3748;
+        }
+
+        input[type="text"]:focus {
+            border-color: #4a5568;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 12px;
+        }
+
+        .btn {
+            background-color: #2d3748; /* Cor escura do botão */
+            color: #ffffff;
+            border: none;
+            padding: 10px 16px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+        }
+
+        .btn:hover {
+            background-color: #4a5568;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Consulta de CEP</h1>
+        <div class="input-group">
+           Digite o CEP: <input> 
+        </div>
+        <div class="buttons">
+            <button class="btn">Buscar </button>
+            <button class="btn">Buscar </button>
+        </div>
+    </div>
+
+</body>
+</html>
