@@ -109,73 +109,73 @@
 </body>
 
 <script>
-const url = 'https://viacep.com.br/ws/01001000/json/'
-const consulta = fetch(url);
-const btn_1 = document.querySelector ('.btn_1')
-const btn_2 = document.querySelector ('.btn_2')
+// const url = 'https://viacep.com.br/ws/01001000/json/'
+// const consulta = fetch(url);
+// const btn_1 = document.querySelector ('.btn_1')
+// const btn_2 = document.querySelector ('.btn_2')
 
-consulta 
+// consulta 
 
-.then((resposta) => {
+// .then((resposta) => {
 
-        if(!response.ok){
-            throw new Error ('Erro na Requisição.')
-        }
-        return response.json()
+//         if(!response.ok){
+//             throw new Error ('Erro na Requisição.')
+//         }
+//         return response.json()
         
-    }) 
-    .then((dados) => {
+//     }) 
+//     .then((dados) => {
 
-        if (dados.erro){
-            throw new Error ('CEP invalido ou não encontrado.')
-        }
-        console.log (dados)
+//         if (dados.erro){
+//             throw new Error ('CEP invalido ou não encontrado.')
+//         }
+//         console.log (dados)
 
-    })  
-    .catch((error) => {
-        console.warn(erro.message)
+//     })  
+//     .catch((error) => {
+//         console.warn(erro.message)
 
-    });
+//     });
 
     
-const botao = document.querySelector('.btn_1');
+// const botao = document.querySelector('.btn_1');
 
 
-const url = `https://viacep.com.br/ws/01001000/json/`;
+// const url = `https://viacep.com.br/ws/01001000/json/`;
 
 
-async function buscarDados() {
-    try 
-        console.log("Buscando...");
+// async function buscarDados() {
+//     try 
+//         console.log("Buscando...");
         
         
-        const resposta = await fetch(url);
+//         const resposta = await fetch(url);
         
-        if (!resposta.ok) {
-            throw new Error("Erro de conexão com o servidor.");
-        }
+//         if (!resposta.ok) {
+//             throw new Error("Erro de conexão com o servidor.");
+//         }
 
         
-        const dados = await resposta.json();
+//         const dados = await resposta.json();
 
-        if (dados.erro) {
-            throw new Error("CEP não encontrado.");
-        }
-    }
+//         if (dados.erro) {
+//             throw new Error("CEP não encontrado.");
+//         }
+//     }
 
 
-    const url = 'https://viacep.com.br/ws/01001000/json/';
-    const consulta = fetch(url);
+//     const url = 'https://viacep.com.br/ws/01001000/json/';
+//     const consulta = fetch(url);
 
-    async function cep(){
-        let mensagem = await consulta;
-        console.log (mensagem)
-        let data = await mensagem.json();
-        console.log(data);
+//     async function cep(){
+//         let mensagem = await consulta;
+//         console.log (mensagem)
+//         let data = await mensagem.json();
+//         console.log(data);
 
-    };
+//     };
 
-    cep();
+//     cep();
 
 
 </script>

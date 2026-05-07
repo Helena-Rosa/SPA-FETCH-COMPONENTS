@@ -28,11 +28,11 @@ consulta
 
 const input = document.querySelector('.input_cep');
 
-const url = `https://viacep.com.br/ws/${input}/json/`;
+const url = `https://viacep.com.br/ws/{input}/json/`;
 
 
 async function buscarDados() {
-    try 
+    try  {
         console.log("Buscando...");
         
         
@@ -47,15 +47,12 @@ async function buscarDados() {
 
         if (dados.erro) {
             throw new Error("CEP não encontrado.");
-        }
-    }
-
-
-
-
-
-
-
+        };
+        }catch(erro){
+            console.log(erro)
+        };
+    };
+};
 
 
     const url = 'https://viacep.com.br/ws/01001000/json/';
